@@ -1,0 +1,125 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Man Web</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #101010;
+            color: white;
+        }
+
+        header {
+            background: #d71920;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #222;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .hero {
+            min-height: 400px;
+            padding: 80px 20px;
+            text-align: center;
+            background: linear-gradient(
+                135deg, #d71920, #101010, #0645ad
+            );
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        button {
+            background: #d71920;
+            color: white;
+            border: none;
+            padding: 14px 25px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #0645ad;
+        }
+
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        footer {
+            background: #222;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>🕷️ SPIDER-MAN WORLD 🕷️</h1>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Your Friendly Neighborhood Spider-Man</h2>
+        <p>With great power comes great responsibility!</p>
+        <button onclick="showMessage()">Explore Now</button>
+        <p id="message" style="margin-top: 25px;"></p>
+    </section>
+
+    <section class="content" id="about">
+        <h2>About Spider-Man</h2>
+        <p style="margin-top: 15px;">
+            Welcome to the Spider-Man testing website.
+            Built with HTML, CSS and JavaScript.
+        </p>
+    </section>
+
+    <footer id="contact">
+        <p>© 2026 Spider-Man Fan Website | HTML Testing Project</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerText =
+                "Your friendly neighborhood hero is here! 🕸️";
+        }
+    </script>
+</body>
+</html>
+```
+
